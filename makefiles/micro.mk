@@ -3,7 +3,7 @@ $(error Use the main Makefile)
 endif
 
 SUBPROJECTS    += micro
-MICRO_VERSION  := 2.0.10
+MICRO_VERSION  := 2.0.11
 DEB_MICRO_V    ?= $(MICRO_VERSION)
 
 micro-setup: setup
