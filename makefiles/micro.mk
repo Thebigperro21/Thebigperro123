@@ -18,7 +18,7 @@ micro: micro-setup
 	$(MAKE) -C $(BUILD_WORK)/micro build \
 		$(DEFAULT_GOLANG_FLAGS) \
 		VERSION="$(DEB_MICRO_V)" \
-		DATE="$(shell date '+%B %u, %Y')"
+		DATE="$(shell date '+%B%e, %Y')"
 	$(INSTALL) -Dm755 $(BUILD_WORK)/micro/micro $(BUILD_STAGE)/micro/$(MEMO_PREFIX)$(MEMO_SUB_PREFIX)/bin/micro
 	$(INSTALL) -Dm644 $(BUILD_WORK)/micro/assets/packaging/micro.1 $(BUILD_STAGE)/micro/$(MEMO_PREFIX)$(MEMO_SUB_PREFIX)/share/man/man1/micro.1
 	$(INSTALL) -Dm644 $(BUILD_WORK)/micro/assets/packaging/micro.desktop $(BUILD_STAGE)/micro/$(MEMO_PREFIX)$(MEMO_SUB_PREFIX)/share/applications/micro.desktop
